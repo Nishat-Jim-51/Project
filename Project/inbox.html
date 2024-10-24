@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Template Creation Section -->
+        <div id="template-creation">
+            <h2>Create a New Template</h2>
+            <label for="templateTitle">Template Title</label>
+            <input type="text" id="templateTitle" placeholder="Enter template title" required>
+
+            <label for="templateDescription">Template Description</label>
+            <textarea id="templateDescription" placeholder="Enter template description"></textarea>
+
+            <div id="questions-section">
+                <h3>Questions</h3>
+            </div>
+
+            <!-- Add question buttons -->
+            <button id="addTextQuestion">Add Text Question</button>
+            <button id="addNumberQuestion">Add Number Question</button>
+            <button id="addMCQQuestion">Add MCQ Question</button>
+            <button id="addCheckboxQuestion">Add Checkbox Question</button>
+            
+            <button id="saveTemplate">Save Template</button>
+        </div>
+
+        <hr>
+
+        <!-- Form Filling Section -->
+        <div id="form-filling">
+            <h2>Fill Out a Form</h2>
+            <div id="form-container">
+                <!-- Form fields will be dynamically loaded here -->
+            </div>
+            <button id="submitForm" style="display:none">Submit Form</button>
+        </div>
+
+        <hr>
+
+        <!-- Results Section -->
+        <div id="results-section">
+            <h2>Results (Form Responses)</h2>
+            <div id="results-container">
+                <!-- Form responses will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
